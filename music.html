@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Pattaya</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,37 +9,36 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="shortcut icon" type="image/png" href="favicon-16x16.png">
 <style>
-body,h1,h5, h2 {font-family: 'Monoton', cursive;}
+body,h1,h5 {font-family: 'Monoton', cursive;}
 body, html {height: 100%}
 .bgimg {
-    background-image: 'fuji.jpg';
+    background-image: url('fuji.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
 }
 h1 {font-size: 100px}
-p {font-family: 'Raleway', sans-serif;}
-h2 {font-size: 50px}
+p, h2 {font-family: 'Raleway', sans-serif;}
+
 </style>
+
+</head>
 
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-topleft w3-container ">  
+  <div class="w3-display-middle w3-jumbo">
+    <h2>chill, homie. you need to let that shit go</h2>
   </div>
   <div class="w3-display-topright w3-container w3-xlarge">
     <a href="./index.html"><p><button class="w3-button w3-hover-none">home</button></p></a>
     <a href="./music.html"><p><button class="w3-button w3-hover-none">music</button></p></a>
     <a href="./tour.html"><p><button class="w3-button w3-hover-none">tour</button></p></a>
-    <a href="https://themartingarrixshop.com" target="_blank"><p><button class="w3-button w3-hover-none">shop</button></p></a>
+    <a href="./shop.html"><p><button class="w3-button w3-hover-none">shop</button></p></a>
     <a href="./contact.html"><p><button class="w3-button w3-hover-none">contact</button></p></a>
   </div>
-  <div class="w3-display-middle">
-        <iframe width="150%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/467309769&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-</div>
-
   <div class="w3-display-bottomleft w3-container">
-        <a href="https://www.instagram.com/vfmus" target="_blank" class="social-link w-inline-block">
+        <a href="https://www.instagram.com/pattayamus" target="_blank" class="social-link w-inline-block">
         <img src="https://uploads-ssl.webflow.com/575ccae4a4bf5b9f21dcaa41/575cd503ad1958ea3cd7ce6a_socialmedia11.png"
         width="25"/></a>
         <p>   </p>
@@ -46,11 +46,11 @@ h2 {font-size: 50px}
         <img src="https://uploads-ssl.webflow.com/575ccae4a4bf5b9f21dcaa41/575cd515a4bf5b9f21dcae23_spotify.png"
         width="25"/></a>
         <p>   </p>
-        <a href="https://soundcloud.com/pattayamusic" target="_blank" class="social-link w-inline-block">
+        <a href="https://soundcloud.com/pattayamus" target="_blank" class="social-link w-inline-block">
         <img src="https://uploads-ssl.webflow.com/575ccae4a4bf5b9f21dcaa41/575cd522a4bf5b9f21dcae25_soundcloud.png"
         width="25"/></a>
         <p>   </p>
-        <a href="https://itunes.apple.com/gb/artist/flume/id4275634?ign-mpt=uo%3D4" target="_blank" class="social-link no w-inline-block">
+        <a href="https://itunes.apple.com" target="_blank" class="social-link no w-inline-block">
         <img src="https://uploads-ssl.webflow.com/575ccae4a4bf5b9f21dcaa41/575cd532ad1958ea3cd7ce6f_apple.png" width="25"/></a>
 
 
@@ -61,39 +61,6 @@ h2 {font-size: 50px}
   </div>
 </div>
 
-<!-- Menu Modal -->
-<div id="menu" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
-      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Starters</h1>
-    </div>
-    <div class="w3-container">
-      <h5>Tomato Soup <b>$2.50</b></h5>
-      <h5>Chicken Salad <b>$3.50</b></h5>
-      <h5>Bread and Butter <b>$1.00</b></h5>
-    </div>
-    <div class="w3-container w3-black">
-      <h1>Main Courses</h1>
-    </div>
-    <div class="w3-container">
-      <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
-      <h5>Italian Pizza <b>$5.50</b></h5>
-      <h5>Veggie Pasta <b>$4.00</b></h5>
-      <h5>Chicken and Potatoes <b>$6.50</b></h5>
-      <h5>Deluxe Burger <b>$5.00</b></h5>
-    </div>
-    <div class="w3-container w3-black">
-      <h1>Desserts</h1>
-    </div>
-    <div class="w3-container">
-      <h5>Fruit Salad <b>$2.50</b></h5>
-      <h5>Ice cream <b>$2.00</b></h5>
-      <h5>Chocolate Cake <b>$4.00</b></h5>
-      <h5>Cheese <b>$5.50</b></h5>
-    </div>
-  </div>
-</div>
 
 <!-- Contact Modal -->
 <div id="contact" class="w3-modal">
@@ -117,5 +84,3 @@ h2 {font-size: 50px}
 
 </body>
 </html>
-
-
